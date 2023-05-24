@@ -346,7 +346,7 @@ ul {
 }
 
 #skill ul li:nth-child(3) {
-  height: 92%;
+  height: 75%;
 }
 
 #skill ul li:nth-child(4) {
@@ -354,15 +354,11 @@ ul {
 }
 
 #skill ul li:nth-child(5) {
-  height: 98%;
-}
-
-#skill ul li:nth-child(5) {
-  height: 98%;
+  height: 89%;
 }
 
 #skill ul li:nth-child(6) {
-  height: 96%;
+  height: 48%;
 }
 
 #skill ul li:not(li:first-child) .percent {
