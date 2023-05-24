@@ -51,12 +51,9 @@ ul {
 }
 
 .container {
-  max-width: 1040px;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .button-primary {
@@ -104,10 +101,31 @@ ul {
   align-items: stretch;
 }
 
+.banner .toggle-button--container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.banner .toggle-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: #fff;
+}
+
+.banner .toggle-button svg {
+  display: block;
+  fill: currentColor;
+}
+
 .banner ul {
   margin-left: auto;
-  display: flex;
   align-items: stretch;
+  display: none;
 }
 
 .banner ul a {
@@ -195,6 +213,7 @@ ul {
   font-size: 4.25rem;
   font-weight: 700;
   padding-bottom: 12px;
+  white-space: nowrap;
 }
 
 #hero .sub-title {
@@ -447,4 +466,88 @@ footer {
   font-size: 1.125rem;
   font-weight: 500;
   text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 1177px) {
+  #hero h1 {
+    font-size: 3.125rem;
+  }
+}
+
+@media (max-width: 1040px) {
+  #skill ul li:not(li:first-child) {
+    width: 14%;
+  }
+
+  #skill ul li:not(li:first-child) .skill {
+    font-size: 0.5rem;
+    white-space: wrap;
+    word-break: break-all;
+  }
+
+  /* #about h1 {
+    font-size: ;
+  } */
+}
+
+@media (max-width: 849px) {
+  #hero h1 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1060px) {
+  .container {
+    max-width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  #about .flex {
+    flex-direction: column;
+  }
+
+  #skill ul li:not(li:first-child) .percent {
+    font-size: 2rem;
+  }
+
+  #skill ul li:not(li:first-child) .percent span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 499px) {
+  #skill ul li:not(li:first-child) .percent {
+    font-size: 1.5rem;
+  }
+
+  #skill ul li:not(li:first-child) .percent span {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  #skill ul li:not(li:first-child) .percent {
+    font-size: 0.975rem;
+  }
+
+  #skill ul li:not(li:first-child) .percent span {
+    font-size: 0.3rem;
+  }
+}
+
+@media (min-width: 657px) {
+  .banner ul {
+    display: flex;
+  }
+
+  .banner .toggle-button--container {
+    display: none;
+  }
 }
